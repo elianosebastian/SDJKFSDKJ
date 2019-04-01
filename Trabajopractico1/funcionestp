@@ -1,0 +1,7 @@
+int Menuopciones(char texto[])
+{
+     int opcion;
+     printf("%s",texto);
+     scanf("%d",&opcion);
+     return opcion;
+}
