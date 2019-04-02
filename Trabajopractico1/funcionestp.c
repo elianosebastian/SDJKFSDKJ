@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "bibliotecatp.h"
 int Menuopciones(char texto[])
 {
      int Opcion;
@@ -5,16 +8,28 @@ int Menuopciones(char texto[])
      scanf("%d",&Opcion);
      return Opcion;
 }
-int primerOperando(int x)
+float primerOperando()
 {
+    float x;
     printf("Ingresar 1er Operando");
-    scanf("%d",&x);
+    scanf("%f",&x);
     return x;
 }
 
-int segundoOperando(int y)
+float segundoOperando()
 {
-    printf("Ingresar 1er Operando");
-    scanf("%d",&y);
+    float y;
+    printf("Ingresar 2do Operando");
+    scanf("%f",&y);
     return y;
+}
+
+float suma (float y , float x)
+{
+    float resultado;
+    resultado = x + y;
+    scanf("%f",&resultado);
+    return resultado;
+
+
 }

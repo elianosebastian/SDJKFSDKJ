@@ -23,3 +23,15 @@
 
 1554080458 source:d:\programacion facultad\programacion i\tp_laboratorio_1\trabajopractico1\funcionestp.c
 
+1554216450 source:d:\programacion i facultad\tp_laboratorio_1\trabajopractico1\funcionestp.c
+	<stdio.h>
+	<stdlib.h>
+
+1554214720 source:d:\programacion i facultad\tp_laboratorio_1\trabajopractico1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	"bibliotecatp.h"
+
+1554214816 d:\programacion i facultad\tp_laboratorio_1\trabajopractico1\bibliotecatp.h
+
