@@ -1,5 +1,6 @@
 #ifndef BIBLIOTECATP_H_INCLUDED
 #define BIBLIOTECATP_H_INCLUDED
+
 /** \brief Funcion para el menu de opciones
  *
  * \param texto[] char
@@ -26,7 +27,21 @@ float primerOperando();
  */
 float segundoOperando();
 
-float suma (float y  , float x);
+
+
+float suma (float num1 , float num2);
+
+float resta (float num1 , float num2);
+
+float multiplicacion (float num1 , float num2);
+
+float division( float num1 , float num2);
+
+float funfactorial(float num1 , float num2);
+
+
+
+
 
 
 

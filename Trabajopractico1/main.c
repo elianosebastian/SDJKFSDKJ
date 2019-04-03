@@ -24,22 +24,39 @@ int main()
 
         case 2:
         segundoNum = segundoOperando();
-        flag = 1
+        flag = 1;
         break;
 
         case 3:
-        system("cls");
         if (flag==1)
         {
-         printf("\n **Realizando las operaciones....**")
-         flag2=1;
-        }else {
-               printf("\n ERROR! Primero debe ingresar los dos operadores");
-               }
+            system("cls");
+            printf("\n Realizando las operaciones....");
+            printf("\n A) Suma entre: %.2f  (x) y %.2f (y) ",primerNum,segundoNum);
+            printf("\n B) Resta entre: %.2f (x) y %.2f (y)",primerNum,segundoNum);
+            printf("\n C) Multiplicacion entre: %.2f (x) y  %.2f (y)",primerNum,segundoNum);
+            printf("\n D) El Factorial de : %.2f (x) y   %.2f  (y)",primerNum,segundoNum);
+            flag2=1;
+        }else{
+               system("cls");
+               printf("\n ERROR! Primero debe ingresar los dos operadores (x) e (y)");
+             }
         break;
 
         case 4:
-
+        if (flag2==1)
+        {
+            system("cls");
+            suma (primerNum , segundoNum);
+            resta (primerNum , segundoNum);
+            multiplicacion (primerNum , segundoNum);
+            division (primerNum , segundoNum);
+            funfactorial(primerNum , segundoNum);
+        } else
+        {
+            system("cls");
+            printf("\n ERROR! Primero debe ingresar la  opcion 3");
+        }
         break;
 
         case 5:
@@ -48,8 +65,8 @@ int main()
 
 
         default:
-            printf("Opcion Incorrecta\n");
-            seguir = 'n';
+        printf("Opcion Incorrecta\n");
+        system("pause");
         break;
       }
 
@@ -57,8 +74,5 @@ int main()
     system("cls");
 
     }while(seguir=='s');
-
-printf("\n El resutlado de la suma es %f",sumaNum);
-
     return 0;
 }
