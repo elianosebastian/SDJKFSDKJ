@@ -35,7 +35,7 @@ int main()
             printf("\n A) Suma entre: %.2f  (x) y %.2f (y) ",primerNum,segundoNum);
             printf("\n B) Resta entre: %.2f (x) y %.2f (y)",primerNum,segundoNum);
             printf("\n C) Multiplicacion entre: %.2f (x) y  %.2f (y)",primerNum,segundoNum);
-            printf("\n D) El Factorial de : %.2f (x) y   %.2f  (y)",primerNum,segundoNum);
+            printf("\n D) El Factorial de : %.2f (x) y   %.2f  (y) \n",primerNum,segundoNum);
             flag2=1;
         }else{
                system("cls");

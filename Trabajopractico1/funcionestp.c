@@ -11,7 +11,7 @@ int Menuopciones(char texto[])
 float primerOperando()
 {
     float x;
-    printf("Ingresar 1er Operando");
+    printf("Ingresar 1er Operando : ");
     scanf("%f",&x);
     return x;
 }
@@ -19,7 +19,7 @@ float primerOperando()
 float segundoOperando()
 {
     float y;
-    printf("Ingresar 2do Operando");
+    printf("Ingresar 2do Operando : ");
     scanf("%f",&y);
     return y;
 }
@@ -28,7 +28,7 @@ float suma (float num1 , float num2)
 {
     float resultadoSuma;
     resultadoSuma = num1 + num2;
-    printf("\n A) Resultado de la Suma");
+    printf("\n A) Resultado de la Suma %.2f ",resultadoSuma);
     return resultadoSuma;
 }
 
@@ -36,7 +36,7 @@ float resta (float num1 , float num2)
 {
     float resultadoResta;
     resultadoResta = num1 * num2;
-    printf("\n B)Resultado de la Resta: ");
+    printf("\n B)Resultado de la Resta:%.2f ",resultadoResta);
     return resultadoResta;
 }
 
@@ -45,7 +45,7 @@ float multiplicacion (float num1 , float num2)
 {
     float resultadoMulti;
     resultadoMulti = num1 * num2;
-    printf("\n C)Resultado de la multiplicacion : ");
+    printf("\n C)Resultado de la multiplicacion : %.2f  ",resultadoMulti);
     return resultadoMulti;
 }
 
@@ -56,7 +56,7 @@ float division( float num1 , float num2)
     if (num2!=0)
     {
         Resultadodivision=num1/num2;
-        printf("\n C)Resultado de la Division : ");
+        printf("\n C)Resultado de la Division : %.2f  ",Resultadodivision);
     }
     else
     {
@@ -77,10 +77,10 @@ float funfactorial(float num1 , float num2)
         {
             auxiliar_1=auxiliar_1*Primerfactorial;
         }
-        printf("\n D)Resultado del factorial (x) :  %.2f ",Primerfactorial);
+        printf("\n D)Resultado del factorial (x) :  %.2f ",auxiliar_1);
     }
     else
-        printf("* No se puede factorear negativo\n\n");
+        printf("\n No se puede factorear negativo");
 
     if (num2>=0)
     {
@@ -89,10 +89,10 @@ float funfactorial(float num1 , float num2)
             auxiliar_2=auxiliar_2*Segundofactorial;
         }
 
-        printf("\n D)Resultado del factorial (x) :  %.2f ",Segundofactorial);
+        printf("\n D)Resultado del factorial (x) :  %.2f ",auxiliar_2);
     }
     else
-        printf("Numeros negativos no pueden ser factoreados");
+        printf("\n Numeros negativos no pueden ser factoreados");
 
     return auxiliar_1;
 }
