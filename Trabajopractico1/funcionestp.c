@@ -35,7 +35,7 @@ float suma (float num1 , float num2)
 float resta (float num1 , float num2)
 {
     float resultadoResta;
-    resultadoResta = num1 * num2;
+    resultadoResta = num1 - num2;
     printf("\n B)Resultado de la Resta:%.2f ",resultadoResta);
     return resultadoResta;
 }
