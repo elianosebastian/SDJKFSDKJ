@@ -65,8 +65,7 @@ int main()
 
 
         default:
-        printf("Opcion Incorrecta\n");
-        system("pause");
+        printf("\n Opcion Incorrecta  (Intente ingresar una de las 5 disponibles..) \n");
         break;
       }
 
@@ -74,5 +73,9 @@ int main()
     system("cls");
 
     }while(seguir=='s');
+   printf("----------------------------------------------------------------------------");
+   printf("\n*******GRACIAS POR UTILIZAR LA CALCULADORA DE SEBASTIAN ELIANO 1-B********\n");
+   printf("-----------------------------------------------------------------------------");
+
     return 0;
 }
